@@ -4109,7 +4109,7 @@ container.appendChild(galleryBtn);
 
                      // Give Android/Chrome time to register each download before starting the next.
                      // One second also avoids multiple files receiving the same gallery-added time.
-                     if (i < files.length - 1) await waitForGalleryQueue(250);
+                     if (i < files.length - 1) await waitForGalleryQueue(1000);
                  }
                  alert(`${files.length} photos queued for saving. Please wait for the browser downloads to finish before opening InShot.`);
              } catch (error) {
